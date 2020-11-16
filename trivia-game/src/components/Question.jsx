@@ -17,7 +17,7 @@ export default function Question({question}) {
     useEffect(() => {
             shuffleAnswers();
             setShuffledArray(answerChoices);
-        }, []
+        }, [answerChoices]
     )
     const shuffleAnswers = () => {
         shuffleArray(answerChoices);
@@ -56,6 +56,8 @@ export default function Question({question}) {
                     <br/>
                 </form>
             </div>)}
+            {pointValue === 0 && <p>Incorrect</p>}
+            {pointValue === 1 && <p>Correct!!</p>}
             <hr className = 'questionDivider'/>
         </div>
     )
