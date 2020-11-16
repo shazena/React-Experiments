@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/React-Experiments/static/css/main.e1e0e1b4.chunk.css",
-    "main.js": "/React-Experiments/static/js/main.e8a5a018.chunk.js",
-    "main.js.map": "/React-Experiments/static/js/main.e8a5a018.chunk.js.map",
-    "runtime-main.js": "/React-Experiments/static/js/runtime-main.da3d55a9.js",
-    "runtime-main.js.map": "/React-Experiments/static/js/runtime-main.da3d55a9.js.map",
-    "static/js/2.15357f58.chunk.js": "/React-Experiments/static/js/2.15357f58.chunk.js",
-    "static/js/2.15357f58.chunk.js.map": "/React-Experiments/static/js/2.15357f58.chunk.js.map",
-    "static/js/3.7845570a.chunk.js": "/React-Experiments/static/js/3.7845570a.chunk.js",
-    "static/js/3.7845570a.chunk.js.map": "/React-Experiments/static/js/3.7845570a.chunk.js.map",
-    "index.html": "/React-Experiments/index.html",
-    "static/css/main.e1e0e1b4.chunk.css.map": "/React-Experiments/static/css/main.e1e0e1b4.chunk.css.map",
-    "static/js/2.15357f58.chunk.js.LICENSE.txt": "/React-Experiments/static/js/2.15357f58.chunk.js.LICENSE.txt"
+    "main.css": "/React-Trivia-Game/static/css/main.e1e0e1b4.chunk.css",
+    "main.js": "/React-Trivia-Game/static/js/main.e8a5a018.chunk.js",
+    "main.js.map": "/React-Trivia-Game/static/js/main.e8a5a018.chunk.js.map",
+    "runtime-main.js": "/React-Trivia-Game/static/js/runtime-main.b118c5a7.js",
+    "runtime-main.js.map": "/React-Trivia-Game/static/js/runtime-main.b118c5a7.js.map",
+    "static/js/2.15357f58.chunk.js": "/React-Trivia-Game/static/js/2.15357f58.chunk.js",
+    "static/js/2.15357f58.chunk.js.map": "/React-Trivia-Game/static/js/2.15357f58.chunk.js.map",
+    "static/js/3.7845570a.chunk.js": "/React-Trivia-Game/static/js/3.7845570a.chunk.js",
+    "static/js/3.7845570a.chunk.js.map": "/React-Trivia-Game/static/js/3.7845570a.chunk.js.map",
+    "index.html": "/React-Trivia-Game/index.html",
+    "static/css/main.e1e0e1b4.chunk.css.map": "/React-Trivia-Game/static/css/main.e1e0e1b4.chunk.css.map",
+    "static/js/2.15357f58.chunk.js.LICENSE.txt": "/React-Trivia-Game/static/js/2.15357f58.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.da3d55a9.js",
+    "static/js/runtime-main.b118c5a7.js",
     "static/js/2.15357f58.chunk.js",
     "static/css/main.e1e0e1b4.chunk.css",
     "static/js/main.e8a5a018.chunk.js"
