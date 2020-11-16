@@ -23,9 +23,10 @@ export default function Question({question}) {
         shuffleArray(answerChoices);
     }
 
-    const determinePoint = e => {
-        setSelectedAnswer(e.target.value);
-        if (selectedAnswer === question.correct_answer) {
+    const handleChangeAnswer = e => {
+        const answerChoice = e.target.value;
+        setSelectedAnswer(answerChoice);
+        if (answerChoice === question.correct_answer) {
             setPointValue(1);
             console.log(selectedAnswer);
             console.log(pointValue);
@@ -41,16 +42,20 @@ export default function Question({question}) {
             <h4>{question.question}</h4>
             {shuffledArray && (<div>
                 <form>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[0]} onClick = {determinePoint}/>
+                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[0]}
+                                  onClick = {handleChangeAnswer}/>
                         {shuffledArray[0]}</label>
                     <br/>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[1]} onClick = {determinePoint}/>
+                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[1]}
+                                  onClick = {handleChangeAnswer}/>
                         {shuffledArray[1]}</label>
                     <br/>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[2]} onClick = {determinePoint}/>
+                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[2]}
+                                  onClick = {handleChangeAnswer}/>
                         {shuffledArray[2]}</label>
                     <br/>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[3]} onClick = {determinePoint}/>
+                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[3]}
+                                  onClick = {handleChangeAnswer}/>
                         {shuffledArray[3]}</label>
                     <br/>
                     <br/>
