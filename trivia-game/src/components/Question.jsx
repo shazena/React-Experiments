@@ -12,7 +12,7 @@ export default function Question({question}) {
     const [answerChoices, setAnswerChoices] = useState([question.correct_answer, ...question.incorrect_answers]);
     const [shuffledArray, setShuffledArray] = useState(null);
     const [selectedAnswer, setSelectedAnswer] = useState('');
-    const [pointValue, setPointValue] = useState(null);
+    const [pointValue, setPointValue] = useState(3);
 
     useEffect(() => {
             shuffleAnswers();
@@ -41,25 +41,24 @@ export default function Question({question}) {
         <div className = 'card' onLoad = {shuffleAnswers}>
             <h4>{question.question}</h4>
             {shuffledArray && (<div>
-                <form>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[0]}
-                                  onClick = {handleChangeAnswer}/>
-                        {shuffledArray[0]}</label>
-                    <br/>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[1]}
-                                  onClick = {handleChangeAnswer}/>
-                        {shuffledArray[1]}</label>
-                    <br/>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[2]}
-                                  onClick = {handleChangeAnswer}/>
-                        {shuffledArray[2]}</label>
-                    <br/>
-                    <label><input type = 'radio' name = 'answer' value = {shuffledArray[3]}
-                                  onClick = {handleChangeAnswer}/>
-                        {shuffledArray[3]}</label>
-                    <br/>
-                    <br/>
-                </form>
+                <label><input type = 'radio' name = 'answer' value = {shuffledArray[0]}
+                              onClick = {handleChangeAnswer}/>
+                    {shuffledArray[0]}</label>
+                <br/>
+                <label><input type = 'radio' name = 'answer' value = {shuffledArray[1]}
+                              onClick = {handleChangeAnswer}/>
+                    {shuffledArray[1]}</label>
+                <br/>
+                <label><input type = 'radio' name = 'answer' value = {shuffledArray[2]}
+                              onClick = {handleChangeAnswer}/>
+                    {shuffledArray[2]}</label>
+                <br/>
+                <label><input type = 'radio' name = 'answer' value = {shuffledArray[3]}
+                              onClick = {handleChangeAnswer}/>
+                    {shuffledArray[3]}</label>
+                <br/>
+                <br/>
+                <input type = "hidden" value = {pointValue} name = 'points'/>
             </div>)}
             {pointValue === 0 && <p>Incorrect</p>}
             {pointValue === 1 && <p>Correct!!</p>}

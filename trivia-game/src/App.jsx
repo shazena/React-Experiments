@@ -12,6 +12,7 @@ function App() {
     const [questionList, setQuestionList] = useState(null);
 
     useEffect(() => {
+        document.title = 'Trivia Game';
         getTriviaQuestions();
     }, []);
 
